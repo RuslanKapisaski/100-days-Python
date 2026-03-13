@@ -19,7 +19,7 @@
 2. type conversion
 3. Math operations 
 4. f-strings
->Project: Tip Calculator
+> Project: Tip Calculator
 ---
 ***Day 3 – Control Flow***
 1. if / elif / else
@@ -32,10 +32,24 @@
 1. random module 
 2. lists 
 3. list indexing
->Project: Rock Paper Scissors
+> Project: Rock Paper Scissors
 ---
 ***Day 5 – Loops***
 1. for loops
 2. range()
 3. loop logic
 >Project: Password Generator
+---
+***Day 6 – Functions***
+1. create functions
+2. functions parameters 
+3. code reuse 
+4. indentation
+> Mini project: Karel robot
+--- 
+***Day 7 – Hangman***
+1. lists + loops 
+2. game logic 
+3. state management
+> Project: Hangman
+---
