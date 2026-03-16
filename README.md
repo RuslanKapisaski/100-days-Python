@@ -65,3 +65,10 @@
 3. data structures
 > Project: Secret Auction
 ---
+***Day 10 – Functions with Return***
+1. return values
+2. multiple outputs 
+3. function refactoring
+> Project: Calculator
+---
+
