@@ -71,4 +71,16 @@
 3. function refactoring
 > Project: Calculator
 ---
+***Day 11 – The Blackjack Capstone Project***
+1. functions and game logic
+2. working with lists (cards & hands)
+3. random module usage
+4. conditional logic (win/lose rules)
+5. flow charts
+> Project: Blackjack Game
 
+***Day 12 – Scope & Number Guessing Game***
+1. local vs global scope
+2. constants and naming conventions
+3. loops and user input handling
+> Project: Number Guessing Game
