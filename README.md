@@ -78,9 +78,15 @@
 4. conditional logic (win/lose rules)
 5. flow charts
 > Project: Blackjack Game
-
+---
 ***Day 12 – Scope & Number Guessing Game***
 1. local vs global scope
 2. constants and naming conventions
 3. loops and user input handling
 > Project: Number Guessing Game
+---
+***Day 13 – Debugging***
+1. debugging techniques
+2. breakpoints
+3. tracing errors
+---
