@@ -90,3 +90,8 @@
 2. breakpoints
 3. tracing errors
 ---
+***Day 14 – Higher/Lower Game***
+1. game mechanics
+2. working with data sets
+> Project: Higher/Lower Game
+---
