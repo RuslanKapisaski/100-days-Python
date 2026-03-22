@@ -95,3 +95,14 @@
 2. working with data sets
 > Project: Higher/Lower Game
 ---
+***Day 15 – Local Development***
+1. work with IDE 
+2. Python environment
+>Project: Coffee Machine
+---
+***Day 16 – Object Oriented Programming***
+1. classes
+2. objects
+3. attributes
+4. methods
+>Project: OOP Coffee Machine
