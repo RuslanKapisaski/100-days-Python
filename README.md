@@ -106,3 +106,7 @@
 3. attributes
 4. methods
 >Project: OOP Coffee Machine
+ ---
+***Day 17 – OOP Project***
+>Project: Quiz Game
+ ---
