@@ -110,3 +110,8 @@
 ***Day 17 – OOP Project***
 >Project: Quiz Game
  ---
+***Day 18 – Turtle Graphics***
+1. graphics with turtle
+2. drawing shapes
+>Project: Spot Painting Picture
+ ---
