@@ -115,3 +115,8 @@
 2. drawing shapes
 >Project: Spot Painting Picture
  ---
+***Day 19 – Event Listeners***
+1. keyboard events
+2. interactive programs
+> Project: Turtle Race
+---
