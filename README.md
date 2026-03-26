@@ -120,3 +120,7 @@
 2. interactive programs
 > Project: Turtle Race
 ---
+***Day 20/21 - Snake Game***
+> Project: Snake game pt.1
+---
+
