@@ -20,7 +20,7 @@ screen.onkey(key= "Down",fun = snake.down)
 screen.onkey(key= "Right",fun = snake.right)
 screen.onkey(key= "Left",fun = snake.left)
 
-game_speed = 0.1
+game_speed = 0.2
 
 is_game_on = True
 
