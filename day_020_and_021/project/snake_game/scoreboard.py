@@ -3,24 +3,25 @@ from turtle import Turtle
 ALIGNMENT = "center"
 FONT = ("Courier", 24, "normal")
 
-class ScoreBoard(Turtle):
+class ScoreBoard():
     def __init__(self):
-        super().__init__()
-        self.color("white")
-        self.score = 0
-        self.penup()
-        self.goto(0,270)
-        self.hideturtle()
+        self.scoreboard = Turtle()
+        self.scoreboard.color("white")
+        self.scoreboard.score = 0
+        self.scoreboard.penup()
+        self.scoreboard.hideturtle()
+        self.scoreboard.goto(0,270)
         self.update_score()
 
     def update_score(self):
-        self.write(arg=f"Score:{self.score}",align=ALIGNMENT,font=FONT)
+        self.scoreboard.write(arg=f"Score:{self.score}",align=ALIGNMENT,font=FONT)
 
     def increase_score(self):
-        self.score += 1
-        self.clear()
-        self.update_score()
+        self.scoreboard.score += 1
+        self.scoreboard.clear()
+        self.scoreboard.update_score()
 
     def game_over(self):
-       self.goto(0,0)
-       self.write(f"GAME OVER!\nScore: {self.score}",align=ALIGNMENT,font=FONT)
+        self.scoreboard.clear()
+        self.scoreboard.goto(0,0)
+        self.scoreboard.write(f"GAME OVER!\nScore: {self.score}",align=ALIGNMENT,font=FONT)

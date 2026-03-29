@@ -77,7 +77,7 @@
 3. random module usage
 4. conditional logic (win/lose rules)
 5. flow charts
-> Project: Blackjack Game
+> Capstone project: Blackjack Game
 ---
 ***Day 12 – Scope & Number Guessing Game***
 1. local vs global scope
@@ -123,4 +123,12 @@
 ***Day 20/21 - Snake Game***
 > Project: Snake game pt.1
 ---
-
+***Day 22 – Pong Game***
+1. game physics
+2. OOP game structure
+> Project: Pong Game
+---
+***Day 23 – Turtle Crossing***
+1. advanced game logic
+>Capstone project: Turtle Crossing
+---
