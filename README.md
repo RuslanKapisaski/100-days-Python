@@ -132,3 +132,9 @@
 1. advanced game logic
 >Capstone project: Turtle Crossing
 ---
+***Day 24 – Files***
+1. file reading
+2. file writing 
+3. paths
+> Project: Mail merge 
+---
