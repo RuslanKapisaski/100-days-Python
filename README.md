@@ -138,3 +138,8 @@
 3. paths
 > Project: Mail merge 
 ---
+***Day 25 – Data Analysis***
+1. pandas 
+2. CSV processing
+> Project: U.S States game
+---
