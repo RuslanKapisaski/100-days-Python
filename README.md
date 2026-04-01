@@ -143,3 +143,8 @@
 2. CSV processing
 > Project: U.S States game
 ---
+***Day 26 – List & Dict Comprehension***
+1. comprehension syntax
+2. cleaner code
+> Project: NATO Alphabet
+> ---

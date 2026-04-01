@@ -25,7 +25,6 @@ while len(guessed) < 50:
     for state in states:
         if state == guess:
             guessed.append(state)
-            print(len(guessed))
             x = df[df["state"] == guess].iloc[0].x
             y = df[df["state"] == guess].iloc[0].y
 
