@@ -147,4 +147,10 @@
 1. comprehension syntax
 2. cleaner code
 > Project: NATO Alphabet
-> ---
+ ---
+***Day 27 – GUI with Tkinter***
+1. buttons
+2. labels 
+3. inputs
+> Project: Miles To Kilometers Converter
+---
