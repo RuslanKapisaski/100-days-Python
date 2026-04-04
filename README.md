@@ -154,3 +154,14 @@
 3. inputs
 > Project: Miles To Kilometers Converter
 ---
+***Day 28***
+1. timer logic
+2. GUI apps
+>Project: Pomodoro App
+---
+***Day 29–30***
+1. GUI
+2. file storage
+3. error handling
+> Project: Password Manager
+---
