@@ -1,6 +1,13 @@
 from tkinter import *
 import math
+import os
+import sys
+# ---------------------------- SETUP DMG FILE ------------------------------- #
 
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.dirname(os.path.abspath(__file__)), relative_path)
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -31,15 +38,15 @@ def start_timer():
     short_break_seconds = SHORT_BREAK_MIN * 60
     long_break_seconds = LONG_BREAK_MIN * 60
 
-    if REPS % 2:
-        count_down(short_break_seconds)
-        timer_label.config(text="Short Break", fg=RED)
-    elif REPS % 8:
+    if REPS % 8 == 0 and REPS != 0:
         count_down(long_break_seconds)
         timer_label.config(text="Long Break", fg=PINK)
-    else:
+    elif REPS % 2 == 0:
         count_down(work_seconds)
         timer_label.config(text="Work", fg=GREEN)
+    else:
+        count_down(short_break_seconds)
+        timer_label.config(text="Short Break", fg=RED)
 
     REPS += 1
 
@@ -54,16 +61,20 @@ def count_down(count):
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
 
     if count > 0:
-       TIMER = window.after(1000, count_down, count - 1)
+        TIMER = window.after(1000, count_down, count - 1)
     else:
-        start_timer()
-        mark = " "
-        working_sessions = math.floot(REPS/2)
+        if REPS % 2 == 0:
+            os.system("afplay /System/Library/Sounds/Ping.aiff &")
+        else:
+            os.system("afplay /System/Library/Sounds/Glass.aiff &")
+
+        mark = ""
+        working_sessions = math.floor(REPS / 2)
+
         for _ in range(working_sessions):
-            mark = '✓'
-            check_marks_label.config(text=mark)
-
-
+            mark += '✓'
+        check_marks_label.config(text=mark)
+        start_timer()
 # ---------------------------- UI SETUP ------------------------------- #
 # Window
 window = Tk()
@@ -72,7 +83,7 @@ window.config(padx=100, pady=50,bg=YELLOW)
 
 # Canvas
 canvas = Canvas(width=200, height=223,bg=YELLOW,highlightthickness=0)
-image = PhotoImage(file = "tomato.png")
+image = PhotoImage(file=resource_path("tomato.png"))
 canvas.create_image(103, 112, image=image)
 timer_text = canvas.create_text(103,130,text="00:00",fill="white",font=(FONT_NAME,40,"bold"))
 canvas.grid(row=1,column=1)
