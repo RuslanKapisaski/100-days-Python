@@ -23,7 +23,7 @@ def generate_pass():
 def load_data(user_input):
     reset()
     try:
-        with open("data.json", "r") as file:
+        with open("/Users/ruslankapisaski/Passwords/passwords.json", "r") as file:
             data = json.load(file)
     except FileNotFoundError:
         website_entry.insert(0, "No data found")
@@ -64,17 +64,17 @@ def save_data(website, username_or_email, password):
             "Password: ": password,
         }
     }
+    data = {}
     try:
-        with open("data.json", "r") as file:
-            data = json.load(file)
+        with open("/Users/ruslankapisaski/Passwords/passwords.json", "w") as file:
+            data.update(new_data)
+            json.dump(data, file, indent=4)
     except FileNotFoundError:
-        data = {}
-
-    data.update(new_data)
-
-    with open("data.json", "w") as file:
-        json.dump(data, file, indent=4)
-    reset()
+        pass
+    except json.JSONDecodeError:
+        pass
+    finally:
+        reset()
 
 def are_empty_fields(website, username_email, password):
     is_empty = False
@@ -122,6 +122,7 @@ website_entry.config(textvariable=website_var)
 website_var.trace("w", on_website_change)
 
 username_email_entry = Entry(width=35)
+username_email_entry.insert(0,"ruslank1@abv.bg")
 password_entry = Entry(width=30)
 
 generate_pass_btn = Button(text="Generate Pass", width=10, state="disabled", command=generate_pass)
