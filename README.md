@@ -165,5 +165,75 @@
 3. error handling
 > Project: Password Manager
 ---
-***31***
-> Capstone Project: Flash Cards
+***Day 31 – Flash Card App Capstone***
+1. Tkinter GUI
+2. spaced repetition logic
+3. CSV data handling
+> Project: Flash Card App
+---
+***Day 32 – Email & Dates***
+1. smtplib (sending emails)
+2. datetime module
+3. managing dates and times
+> Project: Automated Birthday Wisher
+---
+***Day 33 – API Endpoints & Parameters***
+1. API endpoints
+2. query parameters
+3. ISS tracking logic
+> Project: ISS Overhead Notifier
+---
+***Day 34 – API Practice***
+1. working with public APIs
+2. GUI quiz interface
+3. fetching & displaying data
+> Project: GUI Quiz App
+---
+***Day 35 – Auth & Environment Variables***
+1. API keys & authentication
+2. environment variables
+3. keeping secrets safe
+> Project: Send SMS Alert
+---
+***Day 36 – Stock Trading News Alert***
+1. stock price APIs
+2. news APIs
+3. conditional alerts
+> Project: Stock Trading News Alert
+---
+***Day 37 – API Post Requests & Headers***
+1. POST requests
+2. request headers
+3. habit tracking APIs
+> Project: Habit Tracker
+---
+***Day 38 – Google Sheets & APIs***
+1. Sheety API
+2. writing to Google Sheets
+3. workout data logging
+> Project: Workout Tracker
+---
+***Day 39–40 – Capstone: Flight Deal Finder***
+1. flight search APIs
+2. OOP project structure
+3. email & SMS notifications
+> Project: Flight Club / Flight Deal Finder
+---
+***Day 41–42 – Web Foundation: HTML***
+1. HTML structure & tags
+2. intermediate HTML elements
+3. forms, tables, links
+> Project: Personal Site (HTML)
+---
+***Day 43–44 – Web Foundation: CSS***
+1. CSS selectors & properties
+2. intermediate CSS
+3. layout & styling
+> Project: Personal Site (CSS)
+---
+***Day 45 – Web Scraping***
+1. BeautifulSoup
+2. parsing HTML
+3. extracting data from websites
+> Project: Web Scraper
+---
