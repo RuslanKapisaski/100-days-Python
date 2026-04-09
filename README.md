@@ -183,3 +183,9 @@
 3. ISS tracking logic
 > Project: ISS Overhead Notifier
 ---
+***Day 34 – API Practice***
+1. working with public APIs
+2. GUI quiz interface
+3. fetching & displaying data
+> Project: GUI Quiz App
+---
