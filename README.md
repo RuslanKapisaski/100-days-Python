@@ -189,3 +189,9 @@
 3. fetching & displaying data
 > Project: GUI Quiz App
 ---
+***Day 35 – Auth & Environment Variables***
+1. API keys & authentication
+2. environment variables
+3. keeping secrets safe
+> Project: Send SMS Alert
+---
