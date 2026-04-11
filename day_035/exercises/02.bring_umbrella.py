@@ -4,7 +4,7 @@ import requests
 
 # Twilio SMS
 account_sid = 'AC7b1158327769801bb9a509023db7115d'
-auth_token = '8414c931c5ec8b3db419c021d318003c'
+auth_token = 'ecdf139336abd8aae59e254ce42cb8ed'
 
 # Open whether map
 api_key= "d462c4e6840a2efdea635324dad6dda2"
