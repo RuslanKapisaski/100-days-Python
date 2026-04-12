@@ -195,3 +195,16 @@
 3. keeping secrets safe
 > Project: Send SMS Alert
 ---
+***Day 36 – Stock Trading News Alert***
+1. stock price APIs
+2. news APIs
+3. conditional alerts
+> Project: Stock Trading News Alert
+---
+***Day 37 – API Post Requests & Headers***
+1. POST requests
+2. PUT requests 
+3. request headers 
+4. habit tracking pixela's APIs
+> Project: Habit Tracker
+---

@@ -8,6 +8,7 @@ load_dotenv()
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
 
 API_KEY = os.getenv(f"NEWS_API_KEY")
+print(API_KEY)
 
 today = datetime.date.today()
 yesterday = today - datetime.timedelta(days=1)
