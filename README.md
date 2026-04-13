@@ -208,3 +208,10 @@
 4. habit tracking pixela's APIs
 > Project: Habit Tracker
 ---
+***Day 38 – Google Sheets & APIs***
+1. Nutrition and Exercise API
+2. Sheety API 
+3. writing to Google Sheets 
+4. workout data logging
+> Project: Workout Tracker
+---
