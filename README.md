@@ -215,3 +215,9 @@
 4. workout data logging
 > Project: Workout Tracker
 ---
+***Day 39–40 – Capstone: Flight Deal Finder***
+1. flight search APIs
+2. OOP project structure
+3. email & SMS notifications
+> Project: Flight Club / Flight Deal Finder
+---
