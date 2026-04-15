@@ -1,45 +1,64 @@
 
 class FlightData:
-    def __init__(self, price, origin_airport, destination_airport, out_date, return_date):
+    def __init__(self, price, origin_airport, destination_airport, out_date, return_date,stops):
         self.price = price
         self.origin_airport = origin_airport
         self.destination_airport = destination_airport
         self.out_date = out_date
         self.return_date = return_date
+        self.stops = stops
 
     @staticmethod
     def find_cheapest_flight(data, return_date):
-        if data == "" or data is None:
+        if not data:
             print("No flight data")
-            return FlightData(price="N/A", origin_airport="N/A",destination_airport="N/A", out_date="N/A",  return_date="N/A")
+            return FlightData("N/A", "N/A", "N/A", "N/A", "N/A", 0)
 
-        all_flights = data.get("best_flights", []) + data.get("other_flights", [])
+        try:
+            all_flights = data.get("best_flights", []) + data.get("other_flights", [])
+            all_flights = [f for f in all_flights if f.get("price") is not None]
 
-        # filter out flights with no price
-        all_flights = [f for f in all_flights if f.get("price") is not None]
+            if not all_flights:
+                print("No flights found")
+                return FlightData("N/A", "N/A", "N/A", "N/A", "N/A", 0)
 
-        if not all_flights:
-            print("No flights found")
-            return FlightData(price="N/A", origin_airport="N/A", destination_airport="N/A", out_date="N/A",
-                              return_date="N/A")
+            cheapest_flight = None
+            lowest_price = float("inf")
 
-        first_flight = all_flights[0]
-        lowest_price = first_flight["price"]
+            for flight in all_flights:
+                try:
+                    price = flight["price"]
+                    segments = flight.get("flights", [])
 
-        origin = first_flight["flights"][0]["departure_airport"]["id"]
-        destination = first_flight["flights"][-1]["arrival_airport"]["id"]
-        out_date = first_flight["flights"][0]["departure_airport"]["time"].split(" ")[0]
+                    if not segments:
+                        continue
 
+                    nr_stops = len(segments) - 1
 
-        cheapest_flight = FlightData(lowest_price, origin, destination, out_date, return_date)
+                    origin = segments[0]["departure_airport"]["id"]
+                    destination = segments[-1]["arrival_airport"]["id"]
+                    out_date = segments[0]["departure_airport"]["time"].split(" ")[0]
 
-        for flight in all_flights[1:]:
-            price = flight.get("price")
-            if price< lowest_price:
-                lowest_price = price
-                origin = flight["flights"][0]["departure_airport"]["id"]
-                destination = flight["flights"][-1]["arrival_airport"]["id"]
-                out_date = flight["flights"][0]["departure_airport"]["time"].split(" ")[0]
-                cheapest_flight = FlightData(lowest_price, origin, destination, out_date, return_date)
+                    if price < lowest_price:
+                        lowest_price = price
+                        cheapest_flight = FlightData(
+                            price,
+                            origin,
+                            destination,
+                            out_date,
+                            return_date,
+                            nr_stops
+                        )
 
-        return cheapest_flight
+                except (KeyError, IndexError, TypeError) as e:
+                    print(f"Skipping bad flight entry: {e}")
+                    continue
+
+            if cheapest_flight is None:
+                return FlightData("N/A", "N/A", "N/A", "N/A", "N/A", 0)
+
+            return cheapest_flight
+
+        except Exception as e:
+            print(f"Unexpected error parsing flight data: {e}")
+            return FlightData("N/A", "N/A", "N/A", "N/A", "N/A", 0)
