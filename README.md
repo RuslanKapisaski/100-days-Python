@@ -221,3 +221,9 @@
 3. email & SMS notifications
 > Project: Flight Club / Flight Deal Finder
 ---
+***Day 41–42 – Web Foundation: HTML***
+1. HTML structure & tags
+2. intermediate HTML elements
+3. forms, tables, links
+> Project: Personal Site (HTML)
+---
