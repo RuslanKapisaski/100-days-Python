@@ -225,5 +225,13 @@
 1. HTML structure & tags
 2. intermediate HTML elements
 3. forms, tables, links
-> Project: Personal Site (HTML)
+> 1. Day 41 Project: Movie Ranking
+> 2. Day 42 Project: Birthday Invite 
+
+---
+***Day 43–44 – Web Foundation: CSS***
+1. CSS selectors & properties
+2. intermediate CSS
+3. layout & styling
+> 1. Day 43 Project: Color Vocab Project
 ---
