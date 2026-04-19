@@ -234,4 +234,5 @@
 2. intermediate CSS
 3. layout & styling
 > 1. Day 43 Project: Color Vocab Project
+> 2. Day 44 Project: Motivational Poster Website
 ---
