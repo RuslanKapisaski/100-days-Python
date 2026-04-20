@@ -236,3 +236,9 @@
 > 1. Day 43 Project: Color Vocab Project
 > 2. Day 44 Project: Motivational Poster Website
 ---
+***Day 45 – Web Scraping***
+1. BeautifulSoup
+2. parsing HTML
+3. extracting data from websites
+> Project: Web Scraper
+---
