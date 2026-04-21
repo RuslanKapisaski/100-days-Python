@@ -242,3 +242,10 @@
 3. extracting data from websites
 > Project: Web Scraper
 ---
+***Day 46 –YouTube Music API***
+1. API authentication with browser headers
+2. ytmusicapi library
+3. Web scraping with BeautifulSoup
+4. Wayback Machine archives
+5. Creating and managing playlists programmatically
+> Project: Billboard Hot 100 Time Machine Playlist
