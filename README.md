@@ -249,3 +249,10 @@
 4. Wayback Machine archives
 5. Creating and managing playlists programmatically
 > Project: Billboard Hot 100 Time Machine Playlist
+---
+***Day 47 – Automated Amazon Price Tracker***
+1. Web scraping with BeautifulSoup
+2. Sending automated emails with smtplib
+3. Environment variables with dotenv
+> Project: Amazon Price Tracker
+---
