@@ -1,6 +1,6 @@
 from setuptools import setup
 
-APP = ['main.py']
+APP = ['01.intorduction.py']
 OPTIONS = {
     'argv_emulation': True,
     'packages': ['tkinter'],

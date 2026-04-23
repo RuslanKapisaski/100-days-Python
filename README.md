@@ -256,3 +256,9 @@
 3. Environment variables with dotenv
 > Project: Amazon Price Tracker
 ---
+***Day 48 – Selenium Web driver***
+1. Browser automation with Selenium
+2. Locating web elements
+3. Playing browser games with bots
+> Project: Game Playing Bot
+---
