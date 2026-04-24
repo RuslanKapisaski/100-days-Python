@@ -262,3 +262,10 @@
 3. Playing browser games with bots
 > Project: Game Playing Bot
 ---
+***Day 49 – Selenium Web Automation***
+1. Chrome profile persistence and session reuse
+2. Automated login with WebDriverWait and expected conditions
+3. Dynamic element selection with CSS selectors and XPath
+4. Retry wrapper pattern for network resilience
+> Project: Gym Class Booking Bot
+---
