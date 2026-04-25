@@ -269,3 +269,11 @@
 4. Retry wrapper pattern for network resilience
 > Project: Gym Class Booking Bot
 ---
+***Day 50 – Auto Tinder Swiping Bot***
+1. Selenium advanced interactions
+2. Automating login flows
+3. Auto-swiping logic
+4. Liking / Disliking Feature
+5. Printing Bot Report
+> Project: Tinder Swiping Bot
+---
