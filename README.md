@@ -277,3 +277,11 @@
 5. Printing Bot Report
 > Project: Tinder Swiping Bot
 ---
+***Day 51 – Internet Speed X Complaint Bot***
+1. OOP - based auto complaint bot
+2. Measuring internet speed with Selenium
+3. Automating Twitter posts
+4. Conditional automation logic
+5. Loads a complaint message to X platform
+> Project: Internet Speed Complaint Bot
+---
