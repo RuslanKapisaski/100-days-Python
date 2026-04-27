@@ -242,7 +242,7 @@
 3. extracting data from websites
 > Project: Web Scraper
 ---
-***Day 46 –YouTube Music API***
+***Day 46 – YouTube Music API***
 1. API authentication with browser headers
 2. ytmusicapi library
 3. Web scraping with BeautifulSoup
