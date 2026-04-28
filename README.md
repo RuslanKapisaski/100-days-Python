@@ -285,3 +285,9 @@
 5. Loads a complaint message to X platform
 > Project: Internet Speed Complaint Bot
 ---
+***Day 52 – Instagram Follower Bot***
+1. Selenium login automation
+2. Scraping followers from target accounts
+3. Auto-following users
+> Project: Instagram Follower Bot
+---
