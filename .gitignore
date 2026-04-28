@@ -31,5 +31,6 @@ dist/
 .DS_Store
 Thumbs.db
 
-# chrome profils
+# chrome profilss
 chrome_profile
+chrome_options

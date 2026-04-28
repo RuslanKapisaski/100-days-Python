@@ -291,3 +291,9 @@
 3. Auto-following users
 > Project: Instagram Follower Bot
 ---
+***Day 53 – Data Entry Job Automation***
+1. Web scraping with BeautifulSoup
+2. Form filling automation with Selenium
+3. Capstone data entry workflow
+> Project: Data Entry Job Automation
+---
