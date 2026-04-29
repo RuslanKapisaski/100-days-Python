@@ -297,3 +297,9 @@
 3. Capstone data entry workflow
 > Project: Data Entry Job Automation
 ---
+***Day 54 – Introduction to Flask***
+1. Know how to set up a Flask web server
+2. Understanding the command line 
+3. Special Python attributes
+4. Function Decorators
+---
