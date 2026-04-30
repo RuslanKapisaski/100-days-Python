@@ -303,3 +303,9 @@
 3. Special Python attributes
 4. Function Decorators
 ---
+***Day 55 – HTML & URL Parsing in Flask***
+1. URL parsing and query parameters
+2. HTML rendering in Flask
+3. Advanced function decorators
+> Project: Higher Lower Game
+---
