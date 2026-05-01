@@ -309,3 +309,9 @@
 3. Advanced function decorators
 > Project: Higher Lower Game
 ---
+***Day 56 – Rendering HTML & Website Templates***
+1. Serving static files in Flask
+2. HTML templates with render_template
+3. Organizing Flask project structure
+> Project: Flask Template Site
+---
