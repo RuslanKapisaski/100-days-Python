@@ -315,3 +315,9 @@
 3. Organizing Flask project structure
 > Project: Flask Template Site
 ---
+***Day 57 – Templating with Jinja in Flask***
+1. Jinja2 templating syntax
+2. Dynamic content rendering
+3. Template inheritance
+> Project: Jinja Blogs Website
+---
