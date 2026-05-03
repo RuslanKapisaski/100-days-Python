@@ -321,3 +321,9 @@
 3. Template inheritance
 > Project: Jinja Blogs Website
 ---
+***Day 58 – Web Foundation Bootstrap***
+1. Introduction to Bootstrap framework
+2. Using Bootstrap layout system
+3. Using Bootstrap components
+> Project: Tindog Web Page
+---
