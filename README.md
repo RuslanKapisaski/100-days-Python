@@ -327,3 +327,9 @@
 3. Using Bootstrap components
 > Project: Tindog Web Page
 ---
+***Day 59 – Advanced: Blog Capstone Project Part 2 – Adding Styling***
+1. Styling a Flask blog with Bootstrap
+2. Customizing themes and layouts
+3. Responsive design for blog pages
+> Project: Styled Flask Blog
+---
