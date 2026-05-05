@@ -333,3 +333,10 @@
 3. Responsive design for blog pages
 > Project: Styled Flask Blog
 ---
+***Day 60 – Advanced: Make POST Requests with Flask and HTML Forms***
+1. Handling HTML form submissions in Flask
+2. Using `request.form` to capture POST data
+3. Printing success message after form submission
+4. Using `smtp.lib` for sending email
+> Project: Flask Contact Form
+---
