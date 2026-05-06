@@ -340,3 +340,9 @@
 4. Using `smtp.lib` for sending email
 > Project: Flask Contact Form
 ---
+***Day 61 – Advanced: Building Advanced Forms with Flask-WTForms***
+1. Setting up Flask-WTForms
+2. Form validation and CSRF protection
+3. Rendering WTForms fields in templates
+> Project: WTForms Login Form
+---
