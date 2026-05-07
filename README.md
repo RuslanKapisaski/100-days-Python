@@ -346,3 +346,10 @@
 3. Rendering WTForms fields in templates
 > Project: WTForms Login Form
 ---
+***Day 62 – Advanced: Flask, WTForms, Bootstrap and CSV – Coffee & Wifi Project***
+1. Combining Flask, WTForms, and Bootstrap
+2. Reading and writing data to CSV files
+3. Displaying dynamic table data in templates
+> Project: Coffee & Wifi Finder
+---
+

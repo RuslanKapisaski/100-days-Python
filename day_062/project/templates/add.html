@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-8">
+
+            <h1>Add a new cafe into the database</h1>
+
+            <!-- This is where your WTForm will go -->
+            <form method="POST" action="/add" novalidate>
+                {{ form.csrf_token }}
+
+                <p class="text-center">
+                    {{ form.cafe.label }} <br/> {{ form.cafe(size=55,class="d-block mx-auto")}}
+                    {% for error in form.cafe.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.location.label }} <br/> {{ form.location(size=55,class="d-block mx-auto")}}
+                    {% for error in form.location.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.open.label }} <br/> {{ form.open(size=55,class="d-block mx-auto")}}
+                    {% for error in form.open.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.close.label }} <br/> {{ form.close(size=55,class="d-block mx-auto")}}
+                    {% for error in form.close.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.coffee.label }} <br/>{{ form.coffee(class="form-select w-75 mx-auto") }}
+                    {% for error in form.coffee.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.wifi.label }} <br/> {{ form.wifi(class="form-select w-75 mx-auto") }}
+                    {% for error in form.wifi.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.power.label }} <br/> {{ form.power(class="form-select w-75 mx-auto") }}
+                    {% for error in form.power.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.submit(class="btn btn-primary") }}
+                </p>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
