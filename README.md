@@ -352,4 +352,9 @@
 3. Displaying dynamic table data in templates
 > Project: Coffee & Wifi Finder
 ---
-
+***Day 63 – Advanced: Databases with SQLite and SQLAlchemy***
+1. Introduction to relational databases and SQLite
+2. Setting up Flask-SQLAlchemy
+3. Performing CRUD operations with ORM models
+> Project: SQLAlchemy Book Database
+---
