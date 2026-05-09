@@ -358,3 +358,8 @@
 3. Performing CRUD operations with ORM models
 > Project: SQLAlchemy Book Database
 ---
+***Day 64 – Advanced: My Top 10 Movies Website***
+1. Building a dynamic movie list with SQLAlchemy
+2. Editing and deleting records via Flask routes
+> Project: Top Movies Site
+---
