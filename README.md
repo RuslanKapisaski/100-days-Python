@@ -363,3 +363,9 @@
 2. Editing and deleting records via Flask routes
 > Project: Top Movies Site
 ---
+***Day 65 – Web Design School – How to Create a Website that People will Love***
+1. Core principles of good UI/UX design
+2. Typography, color theory, and layout rules
+3. Applying design principles in Canva
+> Project: Modern Hotel Website
+---
