@@ -369,3 +369,9 @@
 3. Applying design principles in Canva
 > Project: Modern Hotel Website
 ---
+***Day 66 – Advanced: Building Own API with RESTful Routing***
+1. REST principles and HTTP methods (GET, POST, PUT/PATCH, DELETE)
+2. Building API endpoints in Flask
+3. Returning JSON responses
+> Project: RESTful Cafe API
+---
