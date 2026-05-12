@@ -375,3 +375,9 @@
 3. Returning JSON responses
 > Project: RESTful Cafe API
 ---
+***Day 67 – Advanced: Blog Capstone Project Part 3 – RESTful Routing***
+1. Implementing RESTful routes in the blog project
+2. Adding create, edit, and delete post functionality
+3. Protecting routes and handling HTTP methods
+> Project: RESTful Flask Blog
+---
