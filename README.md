@@ -381,3 +381,9 @@
 3. Protecting routes and handling HTTP methods
 > Project: RESTful Flask Blog
 ---
+***Day 68 – Advanced: Authentication with Flask***
+1. Password hashing with Werkzeug
+2. User login and session management with Flask-Login
+3. Protecting routes with `@login_required`
+> Project: Flask Authentication System
+---
