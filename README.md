@@ -387,3 +387,9 @@
 3. Protecting routes with `@login_required`
 > Project: Flask Authentication System
 ---
+***Day 69 – Advanced: Blog Capstone Project Part 4 – Adding Users***
+1. Registering and authenticating users in the blog
+2. Associating posts with user accounts
+3. Admin-only access control
+> Project: Multi-User Flask Blog
+---
