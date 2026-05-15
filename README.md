@@ -393,3 +393,9 @@
 3. Admin-only access control
 > Project: Multi-User Flask Blog
 ---
+***Day 70 – Advanced: Git, Github and Version Control***
+1. Git fundamentals – init, add, commit, push
+2. Branching, merging, and resolving conflicts
+3. Collaborating with GitHub and pull requests
+> Project: Version-Controlled Project Repository
+---
