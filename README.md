@@ -399,3 +399,9 @@
 3. Collaborating with GitHub and pull requests
 > Project: Version-Controlled Project Repository
 ---
+***Day 71 – Advanced: Deploying Your Web Application***
+1. Preparing a Flask app for production
+2. Deploying to a cloud platform (e.g. Render / Heroku)
+3. Managing environment variables and secret keys
+> Project: Live Deployed Flask App
+---
