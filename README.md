@@ -405,3 +405,9 @@
 3. Managing environment variables and secret keys
 > Project: Live Deployed Flask App
 ---
+***Day 72 – Advanced: Data Exploration with Pandas – College Major v.s. Your Salary***
+1. Loading and inspecting data with Pandas DataFrames
+2. Filtering, sorting, and grouping data
+3. Analysing salary trends by college major
+> Project: College Major Salary Explorer
+---
