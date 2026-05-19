@@ -411,3 +411,14 @@
 3. Analysing salary trends by college major
 > Project: College Major Salary Explorer
 ---
+***Day 73 – Advanced: Data Visualisation with Matplotlib – Programming Languages***
+1. Use .groupby() to explore the number of posts and entries per programming language 
+2. Convert strings to Datetime objects 
+3. Reshape  DataFrame by converting categories to columns using .pivot()
+4. Use .count() and isna().values.any() to look for NaN values in our DataFrame, which we then replaced using .fillna()
+5. Create (multiple) line charts using .plot() with a for-loop 
+6. Style our charts by changing the size, the labels, and the upper and lower bounds of our axis. 
+7. Add a legend to tell apart which line is which by colour 
+8. Smooth out our time-series observations with .rolling().mean() and plotted them to better identify trends over time.
+> Project: Programming Languages Trend Chart
+---
