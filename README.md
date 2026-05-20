@@ -422,3 +422,9 @@
 8. Smooth out our time-series observations with .rolling().mean() and plotted them to better identify trends over time.
 > Project: Programming Languages Trend Chart
 ---
+***Day 74 – Advanced: Aggregate & Merge Data with Pandas – Analyse the LEGO Dataset***
+1. Merging multiple DataFrames with `merge()`
+2. Aggregating data with `groupby()` and `agg()`
+3. Analysing LEGO set and theme data
+> Project: LEGO Dataset Analysis
+---
