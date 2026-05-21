@@ -428,3 +428,9 @@
 3. Analysing LEGO set and theme data
 > Project: LEGO Dataset Analysis
 ---
+***Day 75 – Advanced: Google Trends Data – Resampling and Visualising Time Series***
+1. Working with time series data in Pandas
+2. Resampling data by time period
+3. Visualising Google Trends with Matplotlib
+> Project: Google Trends Time Series Visualiser
+---
