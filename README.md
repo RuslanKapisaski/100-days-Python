@@ -434,3 +434,10 @@
 3. Visualising Google Trends with Matplotlib
 > Project: Google Trends Time Series Visualiser
 ---
+***Day 76 – Advanced: Beautiful Plotly Charts & Analysing the Android App Store***
+1. Creating interactive and styled charts with Plotly
+2. Exploring and cleaning the Android App Store dataset
+3. Analysing app categories, ratings, and installs visually
+> Project: Android App Store Data Visualiser
+---
+
