@@ -440,4 +440,10 @@
 3. Analysing app categories, ratings, and installs visually
 > Project: Android App Store Data Visualiser
 ---
+***Day 77 – Advanced: Computation with NumPy and N-Dimensional Arrays***
+1. Understanding NumPy arrays and array operations
+2. Working with N-dimensional arrays and matrix manipulation
+3. Performing fast numerical computation with NumPy
+> Project: NumPy N-Dimensional Array Explorer
+---
 

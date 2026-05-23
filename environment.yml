@@ -35,4 +35,5 @@ dependencies:
   - flask-bootstrap
   - flask
   - flask-wtf
+  - scipy
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/100-days-Python
