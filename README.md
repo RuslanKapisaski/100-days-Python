@@ -446,4 +446,13 @@
 3. Performing fast numerical computation with NumPy
 > Project: NumPy N-Dimensional Array Explorer
 ---
+***Day 78 – Advanced: Linear Regression and Data Visualisation with Seaborn***
+1. Cleaning data using nested loops to strip unwanted characters across multiple columns
+2. Filtering DataFrames with `.loc[]` and `.query()` using multiple conditions
+3. Building and styling bubble charts with Seaborn and Matplotlib parameters
+4. Converting years to decades using floor division
+5. Superimposing linear regression lines over data with Seaborn
+6. Evaluating regression quality using r-squared and scikit-learn coefficients
+> Project: Films Analysis
+---
 
