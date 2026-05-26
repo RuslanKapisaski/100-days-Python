@@ -455,4 +455,9 @@
 6. Evaluating regression quality using r-squared and scikit-learn coefficients
 > Project: Films Analysis
 ---
-
+***Day 79 – Advanced: Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn***
+1. Exploring and cleaning Nobel Prize dataset
+2. Creating interactive charts with Plotly
+3. Combining Matplotlib and Seaborn for multi-layered analysis
+> Project: Nobel Prize Data Analyser
+---
