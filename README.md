@@ -460,4 +460,10 @@
 2. Creating interactive charts with Plotly
 3. Combining Matplotlib and Seaborn for multi-layered analysis
 > Project: Nobel Prize Data Analyser
+ ---
+***Day 80 – Advanced: The Tragic Discovery of Handwashing – t-Tests & Distributions***
+1. Understanding t-tests and statistical significance
+2. Analysing historical medical data with Pandas
+3. Visualising distributions and probability with Seaborn
+> Project: Handwashing Data Statistical Analyser
 ---
