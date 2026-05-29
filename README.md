@@ -467,3 +467,9 @@
 3. Visualising distributions and probability with Seaborn
 > Project: Handwashing Data Statistical Analyser
 ---
+***Day 81 – Advanced: Capstone Project – Predict House Prices***
+1. Building a linear regression model for price prediction
+2. Feature engineering and data preprocessing
+3. Evaluating model performance and accuracy
+> Project: House Price Predictor (Capstone)
+---
