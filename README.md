@@ -473,3 +473,9 @@
 3. Evaluating model performance and accuracy
 > Project: House Price Predictor (Capstone)
 ---
+***Day 82 – Professional Portfolio Project: Python Scripting***
+1. Designing a portfolio-worthy Python scripting project
+2. Applying automation and scripting best practices
+3. Structuring and documenting a professional script
+> Project: Morse Code Converter
+---
