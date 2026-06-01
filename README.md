@@ -479,3 +479,9 @@
 3. Structuring and documenting a professional script
 > Project: Morse Code Converter
 ---
+***Day 83 – Professional Portfolio Project: Python Web Development***
+1. Building a complete web application with Flask
+2. Integrating frontend and backend components
+3. Deploying and presenting a web project professionally
+> Project: Professional Python Web App Portfolio Piece
+---

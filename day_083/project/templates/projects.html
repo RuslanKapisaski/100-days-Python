@@ -1,0 +1,274 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="pt-36 pb-12 relative overflow-hidden bg-white dark:bg-zinc-900">
+      <div class="absolute top-0 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <p class="reveal text-xs font-medium text-accent tracking-widest uppercase mb-3">Portfolio</p>
+        <h1 class="reveal font-display font-bold text-5xl md:text-6xl text-zinc-900  dark:text-white leading-tight ">All Projects</h1>
+        <p class="reveal text-lg text-zinc-500 dark:text-zinc-400 max-w-xl leading-relaxed mb-8">A complete look at my work across frontend and backend development.</p>
+        <div class="reveal flex flex-wrap gap-2">
+          <template x-for="f in filterOptions" :key="f.value">
+            <button
+              @click="filter = f.value"
+              :class="filter === f.value ? 'bg-accent text-white border-accent' : 'bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:border-accent'"
+              class="text-sm px-4 py-1.5 rounded-full border transition-colors"
+              x-text="f.label">
+            </button>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-24 bg-white dark:bg-zinc-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <!--
+          CORRECTIF : on itere sur TOUS les projets, x-show + x-transition gerent
+          la visibilite de chaque carte. L'ancienne version utilisait x-for sur
+          filteredProjects (computed), ce qui forcait un re-render complet du DOM
+          a chaque changement de filtre — detruisant les classes .reveal et cachant
+          tout le contenu.
+        -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <template x-for="p in allProjects" :key="p.id">
+            <div
+              x-show="filter === 'all' || p.category === filter"
+              x-transition:enter="transition ease-out duration-300"
+              x-transition:enter-start="opacity-0 scale-95 translate-y-2"
+              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-200"
+              x-transition:leave-start="opacity-100 scale-100"
+              x-transition:leave-end="opacity-0 scale-95">
+              <article class="project-card group h-full rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors">
+                <a :href="p.url" class="block photo-frame w-full h-52">
+                  <img :src="p.img" :alt="p.title" loading="lazy"/>
+                </a>
+                <div class="p-6">
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <template x-for="tag in p.tags" :key="tag">
+                      <span class="text-xs px-2.5 py-1 rounded-full"
+                        :class="tag === p.categoryLabel ? 'bg-orange-50 dark:bg-zinc-800 text-accent border border-orange-200 dark:border-zinc-700' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'"
+                        x-text="tag"></span>
+                    </template>
+                  </div>
+                  <a :href="p.url">
+                    <h3 class="font-display font-bold text-lg text-zinc-900 dark:text-white mb-2 group-hover:text-accent transition-colors" x-text="p.title"></h3>
+                  </a>
+                  <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed mb-4" x-text="p.desc"></p>
+                  <div class="flex items-center justify-between">
+                    <a :href="p.url" class="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-900 dark:text-white nav-link">View project →</a>
+                    <span class="text-xs text-zinc-400" x-text="p.year"></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </template>
+        </div>
+        <div x-show="visibleCount === 0" x-cloak class="text-center py-20">
+          <p class="text-zinc-400 text-sm">No projects in this category yet.</p>
+        </div>
+      </div>
+    </section>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 m-10 bg-white dark: p-10">
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Ayurveda-Mobile</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">Mobile app for Ayurveda patients to track treatments, medicines, and health progress in one place.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">10h ago</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Ayurveda-Mobile" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">100-days-Python</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">100-day Udemy Python challenge — every single day stored as a learning journal.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#da5b0b"></span>Jupyter Notebook
+      </div>
+      <span class="text-xs text-zinc-400">Yesterday</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/100-days-Python" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Ayurveda-Lens-API</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">AI-powered food recognition API with PyTorch and FastAPI. Returns Ayurvedic recommendations based on Dosha type.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#3572A5"></span>Python
+      </div>
+      <span class="text-xs text-zinc-400">Last week</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Ayurveda-Lens-API" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">PyTorch-from-scratch</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">5 Jupyter/Colab notebooks covering PyTorch fundamentals, model training, classification, and computer vision.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#da5b0b"></span>Jupyter Notebook
+      </div>
+      <span class="text-xs text-zinc-400">Apr 20</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/PyTorch-from-scratch" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Ayurveda-Scheduler</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">React app for managing appointments using react-big-calendar and Firebase as backend.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">Apr 1</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Ayurveda-Scheduler" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">BookMe</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">SPA built with React.js for listing, renting, and managing properties — apartments, rooms, and vacation homes.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">Jan 31</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/BookMe" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Logic-Interpreter</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">C# console-based interpreter that parses logical expressions using a binary expression tree.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#178600"></span>C#
+      </div>
+      <span class="text-xs text-zinc-400">Jan 27</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Logic-Interpreter" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">MindFlow</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">Full-stack blogging platform that lets users express ideas, connect with others, and curate their own feed.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#563d7c"></span>CSS
+      </div>
+      <span class="text-xs text-zinc-400">Nov 11, 2025</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/MindFlow" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Furniture-Store</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">RESTful API for managing a furniture store — authentication, catalog management, and secure data access.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">Oct 20, 2025</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Furniture-Store" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">Employee-Management-System</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">SoftUni React management system for employees.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">Nov 9, 2025</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/Employee-Management-System" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">movie-magic</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">Movie Magic — CSS project.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#563d7c"></span>CSS
+      </div>
+      <span class="text-xs text-zinc-400">Oct 21, 2025</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/movie-magic" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+  <article class="card-h group rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 hover:border-accent transition-colors p-6 flex flex-col gap-3">
+    <div class="flex items-start justify-between gap-2">
+      <h3 class="font-display font-bold text-base text-zinc-900 dark:text-white group-hover:text-accent transition-colors">I-love-games</h3>
+      <span class="shrink-0 text-xs px-2.5 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">Public</span>
+    </div>
+    <p class="text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed flex-1">SoftUni React workshop project.</p>
+    <div class="flex items-center justify-between pt-3 border-t border-zinc-100 dark:border-zinc-800">
+      <div class="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span class="w-2.5 h-2.5 rounded-full shrink-0" style="background:#f7df1e"></span>JavaScript
+      </div>
+      <span class="text-xs text-zinc-400">Dec 4, 2025</span>
+    </div>
+    <a href="https://github.com/RuslanKapisaski/I-love-games" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-zinc-900 dark:text-white hover:text-accent transition-colors">View on GitHub →</a>
+  </article>
+
+</div>
+
+    <section class="pb-24 bg-white dark:bg-zinc-900">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="bg-zinc-900 dark:bg-zinc-800 rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full blur-2xl pointer-events-none"></div>
+          <div class="relative z-10">
+            <p class="text-xs font-medium text-accent tracking-widest uppercase mb-4">Ready to start?</p>
+            <h2 class="font-display font-bold text-3xl md:text-4xl text-white mb-4">Want your project here?</h2>
+            <p class="text-zinc-400 max-w-md mx-auto mb-8">I'm available for new projects. Tell me about what you're building and let's see if we're a good fit.</p>
+            <a href="{{ url_for("contact") }}" class="inline-flex items-center gap-2 btn-primary bg-accent text-white font-medium px-8 py-3.5 rounded-full hover:bg-accent-light transition-colors">Start a project &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
+
+
