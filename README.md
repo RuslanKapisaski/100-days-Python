@@ -485,3 +485,8 @@
 3. Deploying and presenting a web project professionally
 > Project: Professional Python Web App Portfolio Piece
 ---
+***Day 84 – Professional Portfolio Project: Python Scripting***
+1. Advanced scripting techniques for real-world tasks
+2. Writing clean, production-ready Python code
+> Project: Tic Tac Toe Game
+---
