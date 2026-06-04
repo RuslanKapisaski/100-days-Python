@@ -490,3 +490,9 @@
 2. Writing clean, production-ready Python code
 > Project: Tic Tac Toe Game
 ---
+***Day 85 – Professional Portfolio Project: GUI***
+1. Designing a graphical user interface with Tkinter
+2. Handling user input and events in a GUI application
+3. Packaging and presenting a GUI project professionally
+> Project: Professional Watermark Images GUI Application  
+---
