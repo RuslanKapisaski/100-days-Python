@@ -496,3 +496,9 @@
 3. Packaging and presenting a GUI project professionally
 > Project: Professional Watermark Images GUI Application  
 ---
+***Day 86 – Professional Portfolio Project: GUI***
+1. Building a more complex GUI application
+2. Implementing advanced Tkinter widgets and layouts
+3. Polishing UI/UX for a portfolio-ready desktop app
+> Project: Advanced GUI Application Portfolio Piece
+---
