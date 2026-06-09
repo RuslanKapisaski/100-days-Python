@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-8">
+
+            <h1>Add a new cafe into the database</h1>
+
+            <!-- This is where your WTForm will go -->
+            <form method="POST" novalidate>
+                {{ form.csrf_token }}
+
+                <p class="text-center">
+                    {{ form.name.label }} <br/> {{ form.name(size=55,class="d-block mx-auto")}}
+                    {% for error in form.name.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.map_url.label }} <br/> {{ form.map_url(size=55,class="d-block mx-auto")}}
+                    {% for error in form.map_url.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.img_url.label }} <br/> {{ form.img_url(size=55,class="d-block mx-auto")}}
+                    {% for error in form.img_url.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.location.label }} <br/> {{ form.location(size=55,class="d-block mx-auto")}}
+                    {% for error in form.location.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.seats.label }} <br/>{{ form.seats(class="form-select w-75 mx-auto") }}
+                    {% for error in form.seats.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.has_toilet.label }} <br/> {{ form.has_toilet(class="form-select w-75 mx-auto") }}
+                    {% for error in form.has_toilet.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                <p class="text-center">
+
+                    {{ form.has_wifi.label }} <br/> {{ form.has_wifi(class="form-select w-75 mx-auto") }}
+                    {% for error in form.has_wifi.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+                  <p class="text-center">
+
+                    {{ form.has_sockets.label }} <br/> {{ form.has_sockets(class="form-select w-75 mx-auto") }}
+                    {% for error in form.has_sockets.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                  <p class="text-center">
+
+                    {{ form.can_take_calls.label }} <br/> {{ form.can_take_calls(class="form-select w-75 mx-auto") }}
+                    {% for error in form.can_take_calls.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+                  <p class="text-center">
+
+                    {{ form.coffee_price.label }} <br/> {{ form.coffee_price(class="form-select w-75 mx-auto") }}
+                    {% for error in form.coffee_price.errors %}
+                    <span style="color:red">{{ error }}</span>
+                    {% endfor %}
+                </p>
+
+
+                <p class="text-center">
+
+                    {{ form.submit(class="btn btn-primary") }}
+                </p>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

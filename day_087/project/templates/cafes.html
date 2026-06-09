@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}All Cafes{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="cafe-hero">
+  <h1>Coffee & Wifi</h1>
+  <p>Find your perfect spot to work</p>
+  <div class="count-badge">{{ cafes|length }} cafes listed</div>
+</div>
+
+<div class="cafe-grid">
+  {% for cafe in cafes %}
+  <div class="cafe-card" onclick="window.location='{{ url_for('cafe_detail', cafe_id=cafe.id) }}'" style="cursor:pointer">
+    {% if cafe.img_url %}
+      <img class="cafe-card-img" src="{{ cafe.img_url }}" alt="{{ cafe.name }}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="cafe-card-img-placeholder" style="display:none;">☕</div>
+    {% else %}
+      <div class="cafe-card-img-placeholder">☕</div>
+    {% endif %}
+
+    <div class="cafe-card-body">
+      <h2 class="cafe-card-name">{{ cafe.name }}</h2>
+      <p class="cafe-card-location">
+        📍 {{ cafe.location }}
+        &nbsp;·&nbsp;
+      </p>
+
+      <div class="cafe-card-footer">
+        <div class="cafe-price">
+          {% if cafe.coffee_price %}
+            £{{ cafe.coffee_price }} <span>/ coffee</span>
+          {% else %}
+            <span>Price unknown</span>
+          {% endif %}
+        </div>
+        <div class="cafe-seats">🪑 {{ cafe.seats }} seats</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="page-actions">
+  <a href="{{ url_for('home') }}" class="btn-espresso">← Back to Home</a>
+  <a href="{{ url_for('add') }}" class="btn-outline-caramel">+ Add a Cafe</a>
+</div>
+
+{% endblock %}

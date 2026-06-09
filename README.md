@@ -502,3 +502,12 @@
 3. Polishing UI/UX for a portfolio-ready desktop app
 > Project: Advanced GUI Application Portfolio Piece
 ---
+***Day 87 – Professional Portfolio Project: Web Development***
+1. Building a full-stack cafe discovery website with Flask
+2. Implementing WTForms with validation, SelectField, and CSRF protection
+3. Creating RESTful routes for CRUD operations (add, edit, delete)
+4. Designing a responsive card-based UI with custom CSS
+5. Debugging SQLAlchemy integrity errors and form data flow
+> Project: Coffee & Wifi – Cafe finder web app with a database, dynamic pages, and a polished frontend
+
+---
