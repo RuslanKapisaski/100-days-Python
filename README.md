@@ -516,3 +516,9 @@
 3. Styling and deploying a production-ready web app
 > Project: Todo List Web App
 ---
+***Day 89 – Professional Portfolio Project: Game***
+1. Building a clone of the classic 80s Breakout game using Python Turtle
+2. Implementing ball physics, paddle control, and brick collision detection
+3. Managing game state, scoring, and win/lose conditions
+> Project: Breakout Game (Turtle)
+---
