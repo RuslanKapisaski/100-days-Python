@@ -522,3 +522,10 @@
 3. Managing game state, scoring, and win/lose conditions
 > Project: Breakout Game (Turtle)
 ---
+***Day 90 – Professional Portfolio Project: GUI Desktop App***
+1. Building a GUI desktop application with Tkinter
+2. Implementing a disappearing text writing mode to encourage focus
+3. Handling timers and text events in a desktop environment
+> Project: Disappearing Text Writing App
+---
+---
