@@ -509,5 +509,10 @@
 4. Designing a responsive card-based UI with custom CSS
 5. Debugging SQLAlchemy integrity errors and form data flow
 > Project: Coffee & Wifi – Cafe finder web app with a database, dynamic pages, and a polished frontend
-
+---
+***Day 88 – Professional Portfolio Project: Web Development***
+1. Building a full-featured Todo List web application
+2. Implementing CRUD operations with Flask and a database
+3. Styling and deploying a production-ready web app
+> Project: Todo List Web App
 ---
