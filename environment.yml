@@ -36,4 +36,6 @@ dependencies:
   - flask
   - flask-wtf
   - scipy
+  - pyttsx3
+  - pypdf2
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/100-days-Python

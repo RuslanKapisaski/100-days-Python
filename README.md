@@ -528,4 +528,10 @@
 3. Handling timers and text events in a desktop environment
 > Project: Disappearing Text Writing App
 ---
+***Day 91 – Professional Portfolio Project: HTTP Requests & APIs***
+1. Making HTTP requests and parsing API responses in Python
+2. Converting PDF content to audio using text-to-speech APIs
+3. Automating document processing pipelines with Python
+> Project: PDF to Audiobook Converter
+---
 ---
