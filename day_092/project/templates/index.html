@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Palette Generator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<div class="container py-5">
+
+    <h1 class="text-center mb-4">🎨 Color Palette Generator</h1>
+    <p class="text-center subtitle mb-5">
+        Upload an image and discover its top 10 colors.
+    </p>
+
+    <div class="card shadow-lg p-4 upload-card mx-auto">
+        <form method="POST" enctype="multipart/form-data">
+            <input class="form-control mb-3" type="file" name="image" accept="image/*" required>
+            <button class="btn btn-light w-100 fw-bold">Generate Palette</button>
+        </form>
+    </div>
+
+    {% if image_path %}
+        <div class="text-center mt-5">
+            <img src="{{ image_path }}" class="uploaded-img">
+        </div>
+    {% endif %}
+
+    {% if colors %}
+        <h2 class="text-center mt-5 mb-4 text-white">Top 10 Colors</h2>
+
+        <div class="row">
+            {% for color in colors %}
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card shadow palette-card">
+                        <div class="color-box" style="background: {{ color }};"></div>
+                        <div class="card-body text-center">
+                            <strong>{{ color }}</strong>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

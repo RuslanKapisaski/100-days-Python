@@ -38,4 +38,6 @@ dependencies:
   - scipy
   - pyttsx3
   - pypdf2
+  - scikit-learn
+  - pillow
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/100-days-Python

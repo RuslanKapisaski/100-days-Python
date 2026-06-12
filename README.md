@@ -534,4 +534,9 @@
 3. Automating document processing pipelines with Python
 > Project: PDF to Audiobook Converter
 ---
+***Day 92 – Professional Portfolio Project: Image Processing & Data Science***
+1. Processing and analysing images with Python libraries
+2. Extracting dominant colours from images programmatically
+3. Presenting colour data visually as a palette
+> Project: Image Colour Palette Generator
 ---
