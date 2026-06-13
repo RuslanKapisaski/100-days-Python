@@ -540,3 +540,9 @@
 3. Presenting colour data visually as a palette
 > Project: Image Colour Palette Generator
 ---
+***Day 93 – Professional Portfolio Project: Web Scraping***
+1. Designing a custom web scraper for a chosen target site
+2. Parsing and storing scraped data with BeautifulSoup
+3. Building a reusable and configurable scraping tool
+> Project: Custom Web Scraper
+---
