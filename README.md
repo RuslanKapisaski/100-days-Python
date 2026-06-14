@@ -546,3 +546,9 @@
 3. Building a reusable and configurable scraping tool
 > Project: Custom Web Scraper
 ---
+***Day 94 – Professional Portfolio Project: GUI Automation***
+1. Automating browser and desktop interactions with Selenium
+2. Implementing game automation logic with keyboard controls
+3. Handling dynamic web elements and timing in automation scripts
+> Project: Google Dinosaur Game Automator
+---
