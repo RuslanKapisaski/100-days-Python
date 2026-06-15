@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(135deg, #ffcb05, #3b4cca);
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 20px;
+}

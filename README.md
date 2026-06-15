@@ -552,3 +552,8 @@
 3. Handling dynamic web elements and timing in automation scripts
 > Project: Google Dinosaur Game Automator
 ---
+***Day 96 – Professional Portfolio Project: HTTP Requests & APIs***
+1. Designing and building a custom API-based website
+2. Fetching and displaying live data from external APIs
+3. Integrating backend API logic with a Flask frontend
+> Project: Pokémon Explorer API Website

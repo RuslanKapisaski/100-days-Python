@@ -41,4 +41,5 @@ dependencies:
   - scikit-learn
   - pillow
   - pyautogui
+  - requests
 prefix: /opt/homebrew/Caskroom/miniconda/base/envs/100-days-Python
