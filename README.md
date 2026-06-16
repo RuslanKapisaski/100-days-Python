@@ -557,3 +557,9 @@
 2. Fetching and displaying live data from external APIs
 3. Integrating backend API logic with a Flask frontend
 > Project: Pokémon Explorer API Website
+----
+***Day 97 – Professional Portfolio Project: eCommerce Website***
+1. Building a custom eCommerce website with Flask
+2. Integrating Stripe Checkout for online payments
+3. Creating a complete product purchase workflow
+> Project: Digital Products Store with Stripe Integration
