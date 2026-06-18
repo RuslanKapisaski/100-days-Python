@@ -569,3 +569,9 @@
 2. Integrating Stripe Checkout for online payments
 3. Creating a complete product purchase workflow
 > Project: Digital Products Store with Stripe Integration
+---
+***Day 98 – Professional Portfolio Project: Python Automation***
+1. Designing an automation workflow for a real-world task
+2. Automating file management using Python
+3. Improving productivity by reducing repetitive manual work
+> Project: Downloads Folder Organizer
