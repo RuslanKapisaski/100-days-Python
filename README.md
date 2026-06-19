@@ -575,3 +575,16 @@
 2. Automating file management using Python
 3. Improving productivity by reducing repetitive manual work
 > Project: Downloads Folder Organizer
+---
+> ***Day 99 – Professional Portfolio Project: Data Science & Space Missions Analysis***
+1. Cleaning and analysing historical space mission data from 1957 onwards
+2. Exploring launch trends, mission success rates, and organisation performance
+3. Creating visualisations to understand how space exploration changed over time
+> Project: Space Mission Data Analysis
+---
+> ***Day 99 – Professional Portfolio Project: Space Missions Analysis***
+1. Cleaning and preparing a real-world space missions dataset
+2. Analysing launch trends, costs, success rates, and country dominance
+3. Creating visualisations with Matplotlib, Seaborn, and Plotly
+> Project: Space Missions Data Analysis & Visualisation
+---
