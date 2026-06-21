@@ -588,3 +588,8 @@
 3. Creating visualisations with Matplotlib, Seaborn, and Plotly
 > Project: Space Missions Data Analysis & Visualisation
 ---
+***Day 100 – Professional Portfolio Project: Fatal Force Analysis***
+1. Cleaning and analysing police fatality and US census datasets
+2. Exploring relationships between poverty, education, race, and police killings
+3. Creating advanced visualisations with Pandas, Seaborn, Matplotlib, and Plotly
+> Project: Fatal Force Data Analysis & Visualisation
